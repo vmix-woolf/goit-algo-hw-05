@@ -3,7 +3,7 @@ def binary_search_fractional_numbers(array, value):
     Implements binary search for the sorted array with fractional numbers
     :param array: sorted array with fractional numbers
     :param value: target value for searching
-    :return: tulip (iterations, upper_bound)
+    :return: tuple (iterations, upper_bound)
     """
     left, right = 0, len(arr) - 1
     iterations = 0
