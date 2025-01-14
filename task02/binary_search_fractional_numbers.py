@@ -29,22 +29,6 @@ def binary_search_fractional_numbers(array, value):
 if __name__ == '__main__':
     arr = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9]
 
-    target = 0.1
-    result = binary_search_fractional_numbers(arr, target)
-    print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
-
-    target = 0.2
-    result = binary_search_fractional_numbers(arr, target)
-    print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
-
-    target = 0.3
-    result = binary_search_fractional_numbers(arr, target)
-    print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
-
-    target = 0.4
-    result = binary_search_fractional_numbers(arr, target)
-    print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
-
-    target = 1.0
-    result = binary_search_fractional_numbers(arr, target)
-    print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
+    for i in [0.05, 0.2, 0.35, 0.45, 1.0]:
+        result = binary_search_fractional_numbers(arr, i)
+        print(f"Total iterations: {result[0]}, Upper bound: {result[1]}")
